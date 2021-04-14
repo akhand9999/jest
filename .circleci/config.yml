@@ -76,7 +76,6 @@ jobs:
       - checkout
       - run:
           command: |
-            source ".circleci/parse-tag.sh"
             DOCKERHUB_DOCKEFILE="$DOCKERHUB_DOCKEFILE_ARM64"
             DOCKERHUB_DESTINATION="$DOCKERHUB_REPO:$LATEST_TAG-arm64v8"
             if [ -f $DOCKERHUB_DOCKEFILE ]; then
