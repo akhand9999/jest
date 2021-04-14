@@ -70,8 +70,8 @@ jobs:
           path: reports/junit
 
   test-node-15:
-    working_directory: ~/jest
-    executor: node/default
+    machine:
+      enabled: true
     steps:
       - checkout
       - run:
